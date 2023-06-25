@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "recruiter-e02e3": {
+      "hosting": {
+        "Recruiter-app": [
+          "recruiter-e02e3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "recruiter-e02e3"
+  }
+}
