@@ -1,0 +1,11 @@
+.boundary {
+    position: absolute;
+    top: 5%; /* Corrected, added unit */
+    left: 5%;
+    bottom: 0;
+    right: 0;
+    height: 95%;
+    width: 95%;
+    background-color: yellow;
+    box-sizing: border-box; /* Include padding in total width and height */
+}

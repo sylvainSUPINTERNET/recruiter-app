@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,9 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    DragDropModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
