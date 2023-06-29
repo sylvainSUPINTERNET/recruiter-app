@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { PostgrestSingleResponse, SupabaseClient } from '@supabase/supabase-js';
+import { PostgrestSingleResponse } from '@supabase/supabase-js';
 import { SupabaseService } from './supabase.service';
 import { TABLE_NICHES } from '../constants/constants';
 import { INiche } from '../models/INiche';
