@@ -1,5 +1,6 @@
 import { Component, effect, signal } from '@angular/core';
 import { AngularFireDatabase} from '@angular/fire/compat/database';
+import { ProfileService } from './services/profile.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,9 @@ import { AngularFireDatabase} from '@angular/fire/compat/database';
 export class AppComponent {
 
   count = signal<number>(0);
-  constructor(private db: AngularFireDatabase) {
+  constructor(private readonly db: AngularFireDatabase, private readonly profilService: ProfileService) {
+
+    this.profilService.getProfile();
 
     effect(()=> {
       console.log("effect " + this.count());
