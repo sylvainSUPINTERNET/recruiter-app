@@ -17,4 +17,11 @@ export class ProfilCardComponent {
     }
   }
 
+
+  getNetworksStats(profil: IProfile | undefined) {
+
+    if ( !profil ) return [];
+    return profil?.networks_global_stats_views.reduce((acc, val) => acc + val, 0);
+  }
+
 }

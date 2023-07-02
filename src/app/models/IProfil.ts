@@ -8,7 +8,7 @@ export interface IProfile {
     phoneNumber:string;
     payment_names: string[];
     niches: string[];
-    network_names: string[];
-    network_urls: string[];
-    global_stats_views: number[];
+    networks_names: string[];
+    networks_urls: string[];
+    networks_global_stats_views: number[];
 }
